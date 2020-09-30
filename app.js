@@ -10,6 +10,7 @@ var localStrategy = require('passport-local').Strategy;
 var login = require('./routes/login.js');
 var signup = require('./routes/signup.js');
 var home = require('./routes/home.js');
+var userProfile = require('./routes/user-profile.js');
 
 
 
@@ -43,6 +44,7 @@ app.use(express.urlencoded({extended: true}));
 app.use('/', login);
 app.use('/signup', signup);
 app.use('/home', home)
+app.use('/user-profile', userProfile);
 
 
 
