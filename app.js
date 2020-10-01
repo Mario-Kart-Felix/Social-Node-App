@@ -11,6 +11,7 @@ var login = require('./routes/login.js');
 var signup = require('./routes/signup.js');
 var home = require('./routes/home.js');
 var userProfile = require('./routes/user-profile.js');
+var logout = require('./routes/logout.js');
 
 
 
@@ -45,7 +46,7 @@ app.use('/', login);
 app.use('/signup', signup);
 app.use('/home', home)
 app.use('/user-profile', userProfile);
-
+app.use('/logout', logout);
 
 
 app.listen(process.env.PORT|| 3000, function () {
