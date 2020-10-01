@@ -30,7 +30,7 @@ router.post('/log-in', async function(req, res){
             console.log("found it ")
             console.log("checking");
             console.log('logging you in')
-            req.session.user = userSearch.id;
+            req.session.user = userSearch;
             return res.redirect('/home');
         }else{
             console.log("error logging in")
