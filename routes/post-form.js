@@ -16,9 +16,10 @@ router.post('', async function(req, res){
     let a = Date(Date.now());
     let rightNow = a.toString();
     const post = new Post({
-        author: req.session.user,
+        author: req.session.user.username,
         content: req.body.content,
         date: rightNow,
+        userId: req.session.user._id
 
 
 
@@ -30,7 +31,7 @@ router.post('', async function(req, res){
 
 
     console.log('almost done')
-    res.redirect('post-form');
+    res.redirect('home');
 
 })
 

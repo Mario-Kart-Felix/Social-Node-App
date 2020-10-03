@@ -10,7 +10,7 @@ var postSchema = new Schema({
     date: {type: String, required: true},
     likes: {type: Array},
     comments: {type: Array},
-    posts: {type: Array}
+    userId: {type: String, required: true}
 
 });
 
