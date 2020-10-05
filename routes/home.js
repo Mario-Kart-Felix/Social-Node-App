@@ -14,11 +14,11 @@ router.get('',logger.loggedIn, async function(req, res){
     console.log("home");
     console.log("only the choosen one reach this point")
     let userPosts = await findPost(req,res);
+    let userInfo = req.session.user.username;
 
 
 
-
-    res.render('home.ejs', {userPosts});
+    res.render('home.ejs', {userPosts, userInfo });
 
 })
 
