@@ -1,0 +1,79 @@
+html,
+body {
+
+	
+	
+	font-family: 'Lato', 'Arial', 'sans-serif';
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+    
+  
+    
+}
+
+
+
+
+
+#header-row{
+    background-color: mediumturquoise;
+}
+
+#main-logo{
+    padding-top:25px;
+}
+
+#nav-row{
+    background-color: mediumturquoise;
+}
+
+#nav-list{
+    list-style:none ;
+
+    
+}
+
+#nav-list li  {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+
+#follow-list li{
+    list-style: none;
+    display: inline-block;
+    padding:20px 30px;
+}
+
+.button-action{
+    height: 30px;
+    width: 160px;
+    font-size: 18px;
+    color: black;
+    background-color: mediumturquoise;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.button-action:hover,
+.button-action:active{
+    background-color: white;
+
+}
+
+
+#user-profile-section{
+    margin:70px 0;
+    
+}
+
+
+.card{
+    margin: 41px 0;
+}

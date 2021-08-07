@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+
+
+</head>
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row" id="header-row">
+            <div class="col-sm-12 text-center">
+                <h3 id="main-logo">SOCIAL</h3>
+
+            </div>
+
+        </div>
+        <div class="row" id="nav-row">
+            <div class="col-sm-12 text-center">
+                <ul id="nav-list">
+                    <li><a href="/user-profile">profile</a></li>
+                    <li><a href="/post-form">post</a></li>
+                    <li><a href="#">requests/messages</a></li>
+                    <li><a href="/logout">Log-out</a></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="container-fluid" id="welcome-section">
+
+    <h1>Welcome back, <%= userInfo %></h1>
+    
+   
+    
+    
+    
+
+
+</div>
+
+
+
+    
+    
+    
+<div class="container-fluid" id="home-post-section">
+
+
+
+
+
+
+     <% userPosts.forEach(function(item){ %>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title"><%= item.author %></h4>
+            <h6 class="card-title"><%= item.date %></h6>
+            <p class="card-text"> <%= item.content %> </p>
+            <a href="#" class="card-link">likes<%= item.likes %></a>
+            <a href="#" class="card-link">comments<%= item.comments %></a>
+        </div>
+    </div>
+
+    <% }); %>
+
+
+
+
+          
+    
+    
+  
+
+
+
+</div>
+
+<div class="container-fluid">
+
+
+</div>
+    
+    
+    
+    
+</body>
+</html>
